@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Générer les métriques
-        uses: lowlighter/metrics@latest
+        uses: lowlighter/metrics@v3.1.0 
         with:
           filename: github-metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: header, top-languages, languages, activity, community, repositories, contributors, metadata
+          base: header, top-languages, languages, activity, streak, community, repositories, contributors, metadata
