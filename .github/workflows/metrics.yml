@@ -14,4 +14,12 @@ jobs:
         with:
           filename: github-metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: header, top-languages, languages, activity, streak, community, repositories, contributors, metadata
+          base: header
+          config_timezone: Europe/Paris
+          plugin_languages: yes
+          plugin_languages_indepth: yes
+          plugin_streak: yes
+          plugin_activity: yes
+          plugin_community: yes
+          plugin_repositories: yes
+          plugin_contributors: yes
