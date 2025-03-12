@@ -17,7 +17,7 @@ jobs:
           base: header
           config_timezone: Europe/Paris
           optimize: no  # Réduction de la charge mémoire pour éviter les crashs
-          
+
           # Plugins activés
           plugin_languages: yes
           plugin_languages_indepth: yes
@@ -32,8 +32,8 @@ jobs:
           plugin_stars: yes
           plugin_stars_limit: 4
           plugin_contributors: yes
+          plugin_contributors_sections: contributors
           plugin_followup: yes
           plugin_followup_sections: repositories, user
           plugin_people: yes
           plugin_people_identicons: yes
-          plugin_metadata: yes
