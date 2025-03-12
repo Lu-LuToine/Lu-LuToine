@@ -16,24 +16,11 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: header
           config_timezone: Europe/Paris
-          optimize: pixelate  # Réduction de l'utilisation mémoire
+          optimize: no  # Réduction de la charge mémoire
           
           # Plugins optimisés
           plugin_languages: yes
           plugin_languages_details: percentage
-          plugin_languages_indepth: yes
           plugin_isocalendar: yes
-          plugin_habits: yes
-          plugin_habits_facts: yes
-          plugin_habits_charts: classic
           plugin_repositories: yes
           plugin_stars: yes
-          plugin_contributors: yes
-          plugin_people: yes
-          plugin_people_identicons: yes
-
-          # Réduction de la charge pour éviter les erreurs de mémoire
-          plugin_languages_limit: 6
-          plugin_languages_recent_load: 200
-          plugin_languages_recent_days: 14
-          plugin_habits_days: 14
