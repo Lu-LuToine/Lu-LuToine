@@ -16,7 +16,8 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: header
           config_timezone: Europe/Paris
-          optimize: no  # Réduction de la charge mémoire pour éviter les crashs
+          optimize: no  # Désactive l'optimisation pour éviter les crashs
+          delay: 300  # Ajoute un délai pour éviter les dépassements de quota
 
           # Plugins activés
           plugin_languages: yes
@@ -26,14 +27,9 @@ jobs:
           plugin_isocalendar_duration: full-year
           plugin_habits: yes
           plugin_habits_facts: yes
-          plugin_habits_charts: yes
           plugin_repositories: yes
           plugin_repositories_pinned: 6
           plugin_stars: yes
           plugin_stars_limit: 4
           plugin_contributors: yes
-          plugin_contributors_sections: contributors
           plugin_followup: yes
-          plugin_followup_sections: repositories, user
-          plugin_people: yes
-          plugin_people_identicons: yes
