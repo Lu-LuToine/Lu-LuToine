@@ -25,6 +25,5 @@ jobs:
           plugin_activity: yes
           plugin_streak: yes
           plugin_community: yes
-          plugin_repositories: yes
-          plugin_contributors: yes
-          plugin_metadata: yes
+          plugin_repositories_featured: no  # Désactive le dépôt mis en avant
+
