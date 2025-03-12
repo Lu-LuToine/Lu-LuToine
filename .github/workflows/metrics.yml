@@ -2,7 +2,7 @@ name: Generate GitHub Metrics
 
 on:
   schedule:
-    - cron: "0 0 * * *"  
+    - cron: "*/5 * * * *"  # Exécution toutes les 5 minutes
   workflow_dispatch:  
 
 jobs:
