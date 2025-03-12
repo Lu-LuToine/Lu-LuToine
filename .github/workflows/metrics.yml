@@ -2,8 +2,8 @@ name: Generate GitHub Metrics
 
 on:
   schedule:
-    - cron: "0 0 * * *"  # Mise à jour chaque jour à minuit
-  workflow_dispatch:  # Permet de l'exécuter manuellement
+    - cron: "0 0 * * *"  
+  workflow_dispatch:  
 
 jobs:
   metrics:
@@ -14,4 +14,4 @@ jobs:
         with:
           filename: github-metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: header, activity, community, repositories, metadata
+          base: header, top-languages, languages, activity, community, repositories, contributors, metadata
