@@ -2,7 +2,7 @@ name: Generate GitHub Metrics
 
 on:
   schedule:
-    - cron: "*/5 * * * *"  # Exécution toutes les 5 minutes
+    - cron: "*/5 * * * *"
   workflow_dispatch:  
 
 jobs:
@@ -16,20 +16,18 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: header
           config_timezone: Europe/Paris
-          optimize: no  # Désactive l'optimisation pour éviter les crashs
-          delay: 300  # Ajoute un délai pour éviter les dépassements de quota
-
-          # Plugins activés
+          optimize: no  # Réduction de la charge mémoire
+          
+          # Plugins optimisés
           plugin_languages: yes
-          plugin_languages_indepth: yes
           plugin_languages_details: percentage
+          plugin_languages_indepth: yes
           plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
           plugin_habits: yes
           plugin_habits_facts: yes
+          plugin_habits_charts: yes
           plugin_repositories: yes
-          plugin_repositories_pinned: 6
           plugin_stars: yes
-          plugin_stars_limit: 4
           plugin_contributors: yes
-          plugin_followup: yes
+          plugin_people: yes
+          plugin_people_identicons: yes
