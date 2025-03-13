@@ -27,3 +27,4 @@ jobs:
           plugin_isocalendar: yes
           plugin_repositories: yes
           plugin_stars: yes
+          plugin_achievements: yes
