@@ -2,6 +2,5 @@
 
 ✨ *Let's code and have fun!* 🚀  
 
----
 
 ![Metrics](https://github.com/Lu-LuToine/Lu-LuToine/blob/main/github-metrics.svg)
