@@ -32,3 +32,4 @@ jobs:
           plugin_stars: yes
           plugin_achievements: yes
           plugin_achievements_display: compact
+          plugin_repositories_affiliations : ""
