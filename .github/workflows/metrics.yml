@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Générer les métriques
-        uses: lowlighter/metrics@latest
+        uses: stalomeow/metrics@projects-v2
         with:
           filename: github-metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -27,7 +27,7 @@ jobs:
           plugin_languages_colors: github
           plugin_languages_details: bytes-size, percentage
           plugin_languages_threshold: 2%
-          
+
           plugin_isocalendar: yes
           plugin_stars: yes
           plugin_achievements: yes
